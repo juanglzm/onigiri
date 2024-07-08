@@ -1,0 +1,15 @@
+/* input:not([type=submit]),
+select,
+textarea {
+	border: 2px solid var(--color-base-2);
+	border-radius: 0;
+	padding: 15px;
+	outline: none;
+	background-color: var(--color-base-2);
+
+	&:focus,
+	&:active {
+		background-color: var(--color-base);
+		box-shadow: 0 0 0 3px var(--color-base-3);
+	}
+} */

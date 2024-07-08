@@ -1,0 +1,7 @@
+.home {
+
+	footer {
+		background-color: var(--color-contrast);
+		color: var(--color-base);
+	}
+}

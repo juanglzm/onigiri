@@ -1,0 +1,161 @@
+.site-header {
+
+}
+.primary-menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+
+	@media (--medium) {
+		&[data-action=hover] .menu-item:hover > .sub-menu,
+		&[data-action=hover] .menu-item:hover > .sub-menu[aria-hidden=true] {
+			display:block;
+			visibility:visible
+		}
+	}
+
+	&:target,
+	&[aria-hidden=false] {
+		display:block;
+		visibility:visible;
+	}
+
+	&[aria-hidden=true]{
+		display:none;
+		visibility:hidden;
+	}
+
+	& > .menu-item {
+		display:block;
+
+		@media (--medium) {
+			display:inline-block;
+			margin-right:1em;
+		}
+	}
+
+	.menu-item {
+
+		@media (--medium) {
+			position: relative;
+		}
+	}
+
+	.menu-item-has-children{
+		white-space:nowrap;
+
+		& > a:after{
+			content:"+";
+			display:inline-block;
+			font-weight:700;
+			margin-left:.25em
+		}
+	}
+}
+
+.sub-menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+
+	@media (--medium) {
+		left:0;
+		position:absolute;
+		top:100%
+	}
+
+	&[aria-hidden=true]{
+		display:none;
+		visibility:hidden;
+	}
+
+	&:target,
+	&[aria-hidden=false]{
+		display:block;
+		visibility:visible;
+	}
+
+	& > .menu-item {
+		display: block;
+	}
+}
+
+.site-menu-toggle {
+
+	@media (--medium) {
+		display:none;
+		visibility:hidden
+	}
+
+	&[aria-hidden=true]{
+		display:none;
+		visibility:hidden;
+	}
+	&[aria-hidden=false]{
+		display:block;
+		visibility:visible;
+	}
+}
+
+.no-js {
+
+	@media (--medium) {
+		[data-responsive-nav-control]{
+			display:none;
+			visibility:hidden;
+		}
+	}
+
+	.primary-menu{
+		display:none;
+		list-style:none;
+		margin:0;
+		padding-left:0;
+
+		@media (--medium) {
+			display:block;
+		}
+
+		&:target{
+			display:block;
+		}
+
+		& ul{
+			list-style:none;
+			margin:0;
+			padding-left:0;
+		}
+
+		& li{
+			position:relative;
+
+			& > ul{
+				display:none;
+
+				@media (--medium) {
+					left:0;
+					position:absolute;
+					top:100%
+				}
+			}
+
+			&:hover>ul,
+			&:focus-within>ul,
+			&[focus-within] > ul {
+				display:block;
+			}
+
+			& > a:focus > ul{
+				display:block;
+			}
+		}
+
+		& > li{
+			display:block;
+
+			@media (--medium) {
+				display:inline-block
+			}
+		}
+	}
+}

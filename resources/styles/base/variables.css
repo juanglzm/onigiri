@@ -1,0 +1,64 @@
+/*-------------------------
+*  Media Queries
+*--------------------------*/
+
+/* WordPress Breakpoints */
+@custom-media --small (width < 600px);
+@custom-media --small (width >= 600px);
+@custom-media --medium (width >= 782px);
+@custom-media --large (width >= 960px);
+@custom-media --xlarge (width >= 1080px);
+@custom-media --wide (width >= 1280px);
+@custom-media --huge (width >= 1440px);
+
+@custom-media --until-small (width < 600px);
+@custom-media --until-medium (width < 782px);
+@custom-media --until-large (width < 960px);
+@custom-media --until-xlarge (width < 1080px);
+@custom-media --until-wide (width < 1280px);
+@custom-media --until-huge (width < 1440px);
+
+:root {
+	/* Spacing */
+	--spacing-sm: 0.625rem;
+	--spacing-md: 0.9375rem;
+	--spacing-lg: 1.25rem;
+	--spacing-xl: 1.875rem;
+	--spacing-xxl: 2.5rem;
+
+	--cell-gutter: var(--spacing-sm);
+
+	/* Containers */
+	--content-base: 1020px;
+	--content-wide: 1200px;
+
+	/* Colors */
+	--color-base: #ffffff;
+	--color-base-2: #f0f0f0;
+	--color-base-3: #d6d6d6;
+	--color-contrast: #020617;
+	--color-contrast-2: #1e293b;
+	--color-contrast-3: #000000;
+	--color-accent: #e5303b;
+	--color-accent-2: #eb5d66;
+	--color-accent-3: #c91924;
+
+	/* Fonts */
+	--font-family-headings: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-family-text: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+	/* Animations */
+	--transition-time: 320ms;
+	--transition-slow: 700ms;
+	--transition-swing: cubic-bezier(0.55, 0, 0.1, 1);
+	--transition-swift: cubic-bezier(0.4, 0, 0.2, 1);
+	--transition-default: all var(--transition-time) ease-in-out;
+
+	@media (--medium) {
+		--cell-gutter: var(--spacing-md)
+	}
+
+	/* Misc */
+	--navigation-height: 55px;
+}

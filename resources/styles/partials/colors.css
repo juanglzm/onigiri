@@ -1,0 +1,10 @@
+/* Customize text selection */
+::selection {
+	background: var(--color-contrast);
+	color: var(--color-base);
+}
+
+::-moz-selection {
+	background: var(--color-contrast);
+	color: var(--color-base);
+}
