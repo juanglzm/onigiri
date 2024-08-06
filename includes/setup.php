@@ -104,3 +104,23 @@ function excerpt_read_more_link( string $more_string ) : string {
 	}
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\excerpt_read_more_link' );
+
+/**
+ * Disable gutenberg in specific post types
+ *
+ * @param bool   $current_status Whether the post type can be edited or not.
+ * @param string $post_type      The post type being checked.
+ * @return bool
+ */
+function disable_block_editor_for_posttypes( bool $current_status, string $post_type ) : bool {
+	$disabled_post_types = [
+		'page',
+	];
+
+	if ( in_array( $post_type, $disabled_post_types ) ) {
+		return false;
+	}
+
+	return $current_status;
+}
+add_filter( 'use_block_editor_for_post_type', __NAMESPACE__ . '\disable_block_editor_for_posttypes', 10, 2 );
