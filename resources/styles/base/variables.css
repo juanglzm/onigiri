@@ -28,26 +28,6 @@
 
 	--cell-gutter: var(--spacing-sm);
 
-	/* Containers */
-	--content-base: 1020px;
-	--content-wide: 1200px;
-
-	/* Colors */
-	--color-base: #ffffff;
-	--color-base-2: #f0f0f0;
-	--color-base-3: #d6d6d6;
-	--color-contrast: #020617;
-	--color-contrast-2: #1e293b;
-	--color-contrast-3: #000000;
-	--color-accent: #e5303b;
-	--color-accent-2: #eb5d66;
-	--color-accent-3: #c91924;
-
-	/* Fonts */
-	--font-family-headings: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-	--font-family-text: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-
 	/* Animations */
 	--transition-time: 320ms;
 	--transition-slow: 700ms;

@@ -1,10 +1,10 @@
 /* Customize text selection */
 ::selection {
-	background: var(--color-contrast);
-	color: var(--color-base);
+	background: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--background);
 }
 
 ::-moz-selection {
-	background: var(--color-contrast);
-	color: var(--color-base);
+	background: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--background);
 }

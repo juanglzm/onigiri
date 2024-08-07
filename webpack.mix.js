@@ -22,6 +22,7 @@ mix.js( 'resources/scripts/app.js', 'public/js' )
 	.js( 'resources/scripts/admin.js', 'public/js' )
 	.postCss( 'resources/styles/style.css', 'public/css' )
 	.postCss( 'resources/styles/admin.css', 'public/css' )
+	.postCss( 'resources/styles/editor.css', 'public/css' )
 	.copyWatched( 'resources/fonts', 'public/fonts', { base: 'resources/fonts'} )
 	.copyWatched( 'resources/icons', 'public/icons', { base: 'resources/icons' } )
 	.copyWatched( 'resources/images', 'public/images', { base: 'resources/images' } );

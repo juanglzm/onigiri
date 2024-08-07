@@ -41,6 +41,7 @@ function theme_setup() : void {
 		'flex-width'           => true,
 	];
 	add_theme_support( 'custom-logo', $custom_logo_defs );
+	add_editor_style( 'public/css/editor.css' );
 
 	register_nav_menus(
 		array(
@@ -101,6 +102,10 @@ function excerpt_read_more_link( string $more_string ) : string {
 		global $post;
 		// translators: Excerpt read more text.
 		return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">' . sprintf( __( '...%s', 'onigiri' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
+	} else {
+		global $post;
+		// translators: Excerpt read more text.
+		return ' <a class="more-link">' . sprintf( __( '...%s', 'onigiri' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
 	}
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\excerpt_read_more_link' );

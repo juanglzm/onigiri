@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/admin.js": "/js/admin.js",
+    "/css/editor.css": "/css/editor.css",
     "/css/admin.css": "/css/admin.css",
     "/css/style.css": "/css/style.css",
     "/fonts/Inter-italic.var.woff2": "/fonts/Inter-italic.var.woff2",

@@ -26,7 +26,7 @@ function body_classes( array $classes ) : array {
 	// Set layout.
 	// Options: l-fullwidth-content l-content-sidebar l-sidebar-content
 	// Set a default.
-	$layout = 'l-content-sidebar';
+	$layout = 'l-fullwidth-content';
 	// TODO: Get the body class from setting.
 
 	// Add class to body.

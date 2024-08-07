@@ -1,15 +1,14 @@
 /* input:not([type=submit]),
 select,
 textarea {
-	border: 2px solid var(--color-base-2);
+	border: 2px solid var(--wp--preset--color--slate);
 	border-radius: 0;
 	padding: 15px;
 	outline: none;
-	background-color: var(--color-base-2);
+	background-color: var(--wp--preset--color--background);
 
 	&:focus,
 	&:active {
-		background-color: var(--color-base);
-		box-shadow: 0 0 0 3px var(--color-base-3);
+		box-shadow: 0 0 0 3px var(--wp--preset--color--accent);
 	}
 } */

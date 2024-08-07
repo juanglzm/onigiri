@@ -3,7 +3,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	padding: var(--spacing-xxl) var(--spacing-xl);
-	max-width: var(--content-base);
+	max-width: var(--wp--style--global--content-size);
 }
 
 .l-fullwidth-content .site-container #site-content {
@@ -61,11 +61,11 @@
 }
 
 .wrap {
-	max-width: var(--content-base);
+	max-width: var(--wp--style--global--content-size);
 }
 
 .wrap-wide {
-	max-width: var(--content-wide);
+	max-width: var(--wp--style--global--wide-size);
 }
 
 

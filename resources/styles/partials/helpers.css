@@ -40,7 +40,7 @@
 		display: block;
 		content: '';
 		opacity: .5;
-		background-color: var(--color-contrast);
+		background-color: var(--wp--preset--color--foreground);
 	}
 }
 
