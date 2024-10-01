@@ -52,7 +52,7 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./public/fonts/Inter.var.woff2"
+								"file:./build/fonts/Inter.var.woff2"
 							]
 						},
 						{
@@ -61,7 +61,7 @@
 							"fontStyle": "italic",
 							"fontStretch": "normal",
 							"src": [
-								"file:./public/fonts/Inter-italic.var.woff2"
+								"file:./build/fonts/Inter-italic.var.woff2"
 							]
 						}
 					],

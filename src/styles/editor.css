@@ -1,0 +1,6 @@
+@import './base/_selectors.css';
+
+article :--headings + p {
+	font-weight: 700;
+	background-color: color-mix(in lch, #000 50%, #fff 50%);
+}

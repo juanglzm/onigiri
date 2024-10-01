@@ -69,7 +69,5 @@ pnpm-lock.json
 .vscode
 
 # Overrides
-!resources/icons
-!public/icons
-!resources/js/vendor/
-!public/js/vendor/
+!src/icons
+!build/icons

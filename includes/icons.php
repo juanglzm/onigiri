@@ -40,7 +40,7 @@ function theme_icon( array $atts = [] ) : string {
 		$atts['force'] = true;
 	}
 
-	$icon_path = get_theme_file_path( 'public/icons/' . $atts['group'] . '/' . $atts['icon'] . '.svg' );
+	$icon_path = get_theme_file_path( 'build/icons/' . $atts['group'] . '/' . $atts['icon'] . '.svg' );
 
 	if ( ! file_exists( $icon_path ) ) {
 		return '';

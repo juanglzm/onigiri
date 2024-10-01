@@ -41,7 +41,6 @@ function theme_setup() : void {
 		'flex-width'           => true,
 	];
 	add_theme_support( 'custom-logo', $custom_logo_defs );
-	add_editor_style( 'public/css/editor.css' );
 
 	register_nav_menus(
 		array(
