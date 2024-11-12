@@ -18,7 +18,7 @@ if ( have_posts() ) :
 				<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
 				<?php edit_post_link(); ?>
 			</header>
-			<div class="entry-content" itemprop="mainContentOfPage">
+			<div class="entry-content wrap" itemprop="mainContentOfPage">
 				<?php
 				if ( has_post_thumbnail() ) {
 					the_post_thumbnail( 'full', array( 'itemprop' => 'image' ) );

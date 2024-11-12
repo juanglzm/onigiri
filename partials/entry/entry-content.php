@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="entry-content" itemprop="mainEntityOfPage">
+<div class="entry-content wrap" itemprop="mainEntityOfPage">
 	<?php if ( has_post_thumbnail() ) : ?>
 		<?php $attachment_id = get_post_thumbnail_id( $post->ID ); ?>
 		<a
