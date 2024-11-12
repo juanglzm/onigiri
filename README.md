@@ -27,5 +27,4 @@ Command | Action
 :- | :-
 `npm run build` | Builds theme assets
 `npm run start` | Builds assets and starts Live Roload and Browsersync servers
-`npm run build:production` | Builds production-ready assets for a deployment
 
